@@ -283,7 +283,7 @@ hr {
 /* The Close Button (x) */
 .close-register {
     position: absolute;
-    right: 150px;
+    right: 155px;
     top: 120px;
     font-size: 40px;
     font-weight: bold;
@@ -304,11 +304,23 @@ hr {
 }
 
 /* Change styles for cancel button and signup button on extra small screens */
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 700px) {
 
   .cancelbtn-confirm,
   .signupbtn-confirm {
         width: 100%;
   }
+  .close-register {
+        right: 50px;
+        top: 75px;
+        font-size: 40px;
+        font-weight: bold;
+        color: red;
+    }
+    .close-register:hover,
+    .close-register:focus {
+        width: 100%;
+    
+    }
   
 }
