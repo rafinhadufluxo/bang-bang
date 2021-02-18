@@ -2,12 +2,15 @@
 <html lang="en">
 
 <head>
-  <title>CSS Template</title>
+  <title>Bang Bang</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+<style>
+  
+</style>
 
 <body>
 
@@ -23,88 +26,98 @@
     </a>
   </div>
 
-  <div class="content">
-    <div class="login-user">
-      <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
-
-      <div id="id01" class="modal">
-
-        <form class="modal-content animate" action="/action_page.php" method="post">
-          <div class="imgcontainer">
-            <span onclick="document.getElementById('id01').style.display='none'" class="close"
-              title="Close Modal">&times;</span>
-            <!-- <img src="img_avatar2.png" alt="Avatar" class="avatar"> -->
-          </div>
-
-          <div class="container">
-            <label for="uname"><b>Username</b></label>
-            <input type="text" placeholder="Enter Username" name="uname" required>
-
-            <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" required>
-
-            <button type="submit">Login</button>
-            <label>
-              <input type="checkbox" checked="checked" name="remember"> Remember me
-            </label>
-          </div>
-
-          <div class="container" style="background-color:#f1f1f1">
-            <button type="button" onclick="document.getElementById('id01').style.display='none'"
-              class="cancelbtn">Cancel</button>
-            <span class="psw">Forgot <a href="#">password?</a></span>
-          </div>
-        </form>
-      </div>
+  <div class="slideshow-container">
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="data:image/jpeg;base64,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" style="width:100%">
+      <div class="text">Caption Text</div>
     </div>
 
-    <div class="register-user">
-      <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Sign Up</button>
-
-      <div id="id02" class="modal-2">
-        <form class="modal-content" action="/action_page.php">
-          <div class="imgcontainer">
-            <span onclick="document.getElementById('id02').style.display='none'" class="close-register"
-              title="Close Modal">&times;</span>
-          </div>
-
-          <div class="container-up">
-            <h1>Sign Up</h1>
-            <p>Please fill in this form to create an account.</p>
-            <hr>
-            <label for="email"><b>Email</b></label>
-            <input type="text" placeholder="Enter Email" name="email" required>
-
-            <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" required>
-
-            <label for="psw-repeat"><b>Repeat Password</b></label>
-            <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-
-            <label>
-              <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px">
-              Remember me
-            </label>
-
-            <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms &
-                Privacy</a>.</p>
-
-            <div class="clearfix">
-              <button type="button" onclick="document.getElementById('id02').style.display='none'"
-                class="cancelbtn-confirm">Cancel</button>
-              <button type="submit" class="signupbtn-confirm">Sign Up</button>
-            </div>
-          </div>
-        </form>
-      </div>
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="https://s2.best-wallpaper.net/wallpaper/3840x1200/1701/Extreme-sports-street-skateboarding-city_3840x1200.jpg" style="width:100%">
+      <div class="text">Caption Two</div>
     </div>
 
-    <div class="footer">
-      <p>Footer</p>
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="https://s2.best-wallpaper.net/wallpaper/3840x1200/1709/Skateboard-close-up-sunset_3840x1200.jpg" style="width:100%">
+      <div class="text">Caption Three</div>
     </div>
 
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
   </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+
+  <!-- The App Section -->
+  <div class="container">
+    <div class="row">
+      <div class="column-66">
+        <h1 class="xlarge-font"><b>The App</b></h1>
+        <h1 class="large-font" style="color:MediumSeaGreen;"><b>Why buy it?</b></h1>
+        <p><span style="font-size:36px">Take photos like a pro.</span> You should buy this app because lorem ipsum
+          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <button class="button">Download Application</button>
+      </div>
+      <div class="column-33">
+        <img src="https://portalpopline.com.br/wp-content/uploads/2019/05/vintage-culture.jpg" width="335" height="471">
+      </div>
+    </div>
+  </div>
+
+  <!-- Clarity Section -->
+  <div class="container" style="background-color:#f1f1f1">
+    <div class="row">
+      <div class="column-33">
+        <img src="https://portalpopline.com.br/wp-content/uploads/2019/05/vintage-culture.jpg" alt="App" width="335"
+          height="471">
+      </div>
+      <div class="column-66">
+        <!-- <h1 class="xlarge-font"><b>Clarity</b></h1> -->
+        <h1 class="large-font" style="color:red;"><b>Pixels, who?</b></h1>
+        <p><span style="font-size:24px">A revolution in resolution.</span> Sharp and clear photos with the world's best
+          photo engine, incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+          ullamco laboris nisi ut aliquipex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+          velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        <button class="button" style="background-color:red">Read More</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- The App Section -->
+  <div class="container">
+    <div class="row">
+      <div class="column-66">
+        <h1 class="xlarge-font"><b>The App</b></h1>
+        <h1 class="large-font" style="color:MediumSeaGreen;"><b>Why buy it?</b></h1>
+        <p><span style="font-size:36px">Take photos like a pro.</span> You should buy this app because lorem ipsum
+          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        <button class="button">Download Application</button>
+      </div>
+      <div class="column-33">
+        <img src="https://portalpopline.com.br/wp-content/uploads/2019/05/vintage-culture.jpg" width="335" height="471">
+      </div>
+    </div>
+  </div>
+
+
+
   <script src="js/main.js"></script>
+  <div class="footer">
+    <p>Footer</p>
+  </div>
 
 </body>
+
 </html>
